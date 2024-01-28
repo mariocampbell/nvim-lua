@@ -7,7 +7,7 @@ return {
       "nvim-lua/plenary.nvim",
       {
         'nvim-telescope/telescope-fzf-native.nvim',
-        build = ' arch -arm64 make',
+        build = 'make',
         config = function()
           require('telescope').setup {
             extensions = {
