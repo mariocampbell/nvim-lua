@@ -23,7 +23,6 @@ opts.hlsearch = true
 opts.incsearch = true
 opts.ignorecase = true
 opts.smartcase = true
-opts.winbar = "%f"
 
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap("n", "<esc><esc>", ":noh<return><esc>", { noremap = true, silent = true })
