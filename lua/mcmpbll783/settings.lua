@@ -1,7 +1,7 @@
 local opts = vim.o
 
 opts.clipboard = "unnamed"
-opts.nowrap = true
+opts.wrap = false
 opts.encoding = "utf-8"
 opts.number = true
 opts.relativenumber = true

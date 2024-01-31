@@ -25,7 +25,16 @@ return {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "%f" },
-				lualine_x = { "encoding", "fileformat", "filetype" },
+				lualine_x = {
+					{
+						require("noice").api.status.command.get,
+						cond = require("noice").api.status.command.has,
+						color = { fg = "#82aaff" },
+					},
+					"encoding",
+					"fileformat",
+					"filetype",
+				},
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},
@@ -39,7 +48,9 @@ return {
 			},
 			tabline = {},
 			winbar = {},
-			inactive_winbar = {},
+			inactive_winbar = {
+				lualine_c = { "%f" },
+			},
 			extensions = {},
 		})
 	end,
