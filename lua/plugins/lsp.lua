@@ -61,6 +61,8 @@ return {
 				},
 			},
 		})
-		lspconfig.ember.setup({})
+		lspconfig.ember.setup({
+			on_attach = on_attach,
+		})
 	end,
 }
