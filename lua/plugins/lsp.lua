@@ -55,5 +55,18 @@ return {
 		lspconfig.tsserver.setup({})
 		lspconfig.lua_ls.setup({})
 		lspconfig.ember.setup({})
+		lspconfig.emmet_language_server.setup({
+			filetypes = {
+				"css",
+				"html",
+				"javascript",
+				"javascriptreact",
+				"less",
+				"sass",
+				"scss",
+				"handlers",
+				"typescriptreact",
+			},
+		})
 	end,
 }
